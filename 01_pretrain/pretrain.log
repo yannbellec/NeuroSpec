@@ -1,0 +1,380 @@
+ybellec@ybellec-8936:~/NEUROSPEC$ python 01_pretrain_synthetic.py
+Device : cuda
+dtype  : torch.bfloat16
+GPU    : NVIDIA H100 80GB HBM3
+VRAM   : 79.1 GB
+Model params: 98,069
+Generating fixed validation sets...
+  8000 validation spectra across 4 domains
+
+============================================================
+  PHASE: Phase1_clean+noisy  (65 epochs)
+============================================================
+Epoch 001/65 | loss=3.6878 | recon=0.2238 | ap=1.1046 | peaks=9.3267 | unmatch=0.5349 | bw_ex=0.1275 | LR=2.00e-04 | 18.3s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=6855  data=1.6% of wall-time
+Epoch 002/65 | loss=1.7596 | recon=0.0574 | ap=0.2492 | peaks=5.0130 | unmatch=0.3586 | bw_ex=0.0006 | LR=4.00e-04 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9662  data=0.1% of wall-time
+Epoch 003/65 | loss=1.4866 | recon=0.0418 | ap=0.1719 | peaks=4.2909 | unmatch=0.3372 | bw_ex=0.0001 | LR=6.00e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9782  data=0.1% of wall-time
+Epoch 004/65 | loss=1.3477 | recon=0.0324 | ap=0.1355 | peaks=3.9463 | unmatch=0.2905 | bw_ex=0.0000 | LR=8.00e-04 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9785  data=0.1% of wall-time
+Epoch 005/65 | loss=1.2750 | recon=0.0293 | ap=0.1326 | peaks=3.7302 | unmatch=0.2686 | bw_ex=0.0001 | LR=1.00e-03 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9803  data=0.1% of wall-time
+  [VAL] clean=1.0350  noisy=1.7142  overlap=2.8953  lfp=1.1415
+  → Best checkpoint saved (val=1.6965)
+Epoch 006/65 | loss=1.1664 | recon=0.0292 | ap=0.1318 | peaks=3.3789 | unmatch=0.2487 | bw_ex=0.0001 | LR=1.00e-03 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9497  data=0.8% of wall-time
+Epoch 007/65 | loss=1.1309 | recon=0.0307 | ap=0.1252 | peaks=3.2768 | unmatch=0.2297 | bw_ex=0.0001 | LR=9.99e-04 | 14.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9539  data=2.6% of wall-time
+Epoch 008/65 | loss=1.1005 | recon=0.0259 | ap=0.1239 | peaks=3.2017 | unmatch=0.2160 | bw_ex=0.0001 | LR=9.97e-04 | 14.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9580  data=2.4% of wall-time
+Epoch 009/65 | loss=1.0040 | recon=0.0248 | ap=0.1160 | peaks=2.9023 | unmatch=0.2045 | bw_ex=0.0001 | LR=9.94e-04 | 14.3s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9584  data=2.7% of wall-time
+Epoch 010/65 | loss=0.9817 | recon=0.0229 | ap=0.1199 | peaks=2.8354 | unmatch=0.1902 | bw_ex=0.0001 | LR=9.89e-04 | 14.3s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9548  data=1.6% of wall-time
+  [VAL] clean=0.7380  noisy=1.4540  overlap=2.1726  lfp=0.8838
+  → Best checkpoint saved (val=1.3121)
+Epoch 011/65 | loss=0.9326 | recon=0.0240 | ap=0.0998 | peaks=2.7049 | unmatch=0.1830 | bw_ex=0.0002 | LR=9.83e-04 | 14.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9490  data=1.5% of wall-time
+Epoch 012/65 | loss=0.9297 | recon=0.0254 | ap=0.1108 | peaks=2.6737 | unmatch=0.1795 | bw_ex=0.0003 | LR=9.76e-04 | 14.3s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9507  data=2.4% of wall-time
+Epoch 013/65 | loss=0.8885 | recon=0.0213 | ap=0.0960 | peaks=2.5777 | unmatch=0.1749 | bw_ex=0.0004 | LR=9.67e-04 | 14.4s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9391  data=1.9% of wall-time
+Epoch 014/65 | loss=0.9015 | recon=0.0233 | ap=0.1004 | peaks=2.6060 | unmatch=0.1756 | bw_ex=0.0004 | LR=9.57e-04 | 14.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9525  data=2.4% of wall-time
+Epoch 015/65 | loss=0.8500 | recon=0.0208 | ap=0.0918 | peaks=2.4602 | unmatch=0.1708 | bw_ex=0.0006 | LR=9.46e-04 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9691  data=1.7% of wall-time
+  [VAL] clean=0.6568  noisy=1.3404  overlap=2.0942  lfp=0.7388
+  → Best checkpoint saved (val=1.2076)
+Epoch 016/65 | loss=0.8403 | recon=0.0207 | ap=0.0983 | peaks=2.4170 | unmatch=0.1703 | bw_ex=0.0007 | LR=9.34e-04 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9759  data=1.5% of wall-time
+Epoch 017/65 | loss=0.8186 | recon=0.0216 | ap=0.0905 | peaks=2.3556 | unmatch=0.1672 | bw_ex=0.0007 | LR=9.20e-04 | 14.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9520  data=2.6% of wall-time
+Epoch 018/65 | loss=0.7902 | recon=0.0189 | ap=0.0766 | peaks=2.2941 | unmatch=0.1650 | bw_ex=0.0008 | LR=9.05e-04 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9739  data=1.6% of wall-time
+Epoch 019/65 | loss=0.8090 | recon=0.0200 | ap=0.0912 | peaks=2.3281 | unmatch=0.1672 | bw_ex=0.0009 | LR=8.90e-04 | 14.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9677  data=1.7% of wall-time
+Epoch 020/65 | loss=0.7553 | recon=0.0185 | ap=0.0805 | peaks=2.1742 | unmatch=0.1632 | bw_ex=0.0009 | LR=8.73e-04 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9621  data=2.3% of wall-time
+  [VAL] clean=0.5883  noisy=1.2392  overlap=1.7877  lfp=0.7243
+  → Best checkpoint saved (val=1.0849)
+Epoch 021/65 | loss=0.7707 | recon=0.0193 | ap=0.0816 | peaks=2.2201 | unmatch=0.1645 | bw_ex=0.0009 | LR=8.55e-04 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9780  data=0.1% of wall-time
+Epoch 022/65 | loss=0.7617 | recon=0.0185 | ap=0.0760 | peaks=2.2005 | unmatch=0.1658 | bw_ex=0.0010 | LR=8.36e-04 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9707  data=0.7% of wall-time
+Epoch 023/65 | loss=0.7519 | recon=0.0184 | ap=0.0784 | peaks=2.1679 | unmatch=0.1594 | bw_ex=0.0010 | LR=8.17e-04 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9766  data=0.1% of wall-time
+Epoch 024/65 | loss=0.7310 | recon=0.0183 | ap=0.0883 | peaks=2.0812 | unmatch=0.1610 | bw_ex=0.0010 | LR=7.96e-04 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9751  data=0.1% of wall-time
+Epoch 025/65 | loss=0.7589 | recon=0.0170 | ap=0.0750 | peaks=2.2010 | unmatch=0.1600 | bw_ex=0.0009 | LR=7.75e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9790  data=0.1% of wall-time
+  [VAL] clean=0.5870  noisy=1.1973  overlap=1.6897  lfp=0.7679
+  → Best checkpoint saved (val=1.0605)
+Epoch 026/65 | loss=0.7097 | recon=0.0185 | ap=0.0851 | peaks=2.0146 | unmatch=0.1609 | bw_ex=0.0010 | LR=7.53e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9883  data=0.1% of wall-time
+Epoch 027/65 | loss=0.7165 | recon=0.0174 | ap=0.0781 | peaks=2.0544 | unmatch=0.1589 | bw_ex=0.0010 | LR=7.30e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9804  data=0.1% of wall-time
+Epoch 028/65 | loss=0.7123 | recon=0.0169 | ap=0.0795 | peaks=2.0401 | unmatch=0.1572 | bw_ex=0.0013 | LR=7.06e-04 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9846  data=0.1% of wall-time
+Epoch 029/65 | loss=0.7039 | recon=0.0171 | ap=0.0748 | peaks=2.0207 | unmatch=0.1558 | bw_ex=0.0010 | LR=6.82e-04 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9728  data=0.1% of wall-time
+Epoch 030/65 | loss=0.6810 | recon=0.0163 | ap=0.0770 | peaks=1.9437 | unmatch=0.1549 | bw_ex=0.0007 | LR=6.58e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9844  data=0.1% of wall-time
+  [VAL] clean=0.5120  noisy=1.1303  overlap=1.6215  lfp=0.7408
+  → Best checkpoint saved (val=1.0011)
+Epoch 031/65 | loss=0.7065 | recon=0.0172 | ap=0.0798 | peaks=2.0200 | unmatch=0.1550 | bw_ex=0.0010 | LR=6.33e-04 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9816  data=0.1% of wall-time
+Epoch 032/65 | loss=0.7078 | recon=0.0182 | ap=0.0819 | peaks=2.0145 | unmatch=0.1593 | bw_ex=0.0010 | LR=6.08e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9780  data=0.1% of wall-time
+Epoch 033/65 | loss=0.7042 | recon=0.0168 | ap=0.0824 | peaks=2.0095 | unmatch=0.1555 | bw_ex=0.0008 | LR=5.82e-04 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9795  data=0.1% of wall-time
+Epoch 034/65 | loss=0.6697 | recon=0.0170 | ap=0.0786 | peaks=1.9007 | unmatch=0.1536 | bw_ex=0.0008 | LR=5.57e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9957  data=0.1% of wall-time
+Epoch 035/65 | loss=0.6579 | recon=0.0172 | ap=0.0831 | peaks=1.8530 | unmatch=0.1538 | bw_ex=0.0009 | LR=5.31e-04 | 13.6s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9886  data=0.1% of wall-time
+  [VAL] clean=0.5361  noisy=1.1103  overlap=1.6972  lfp=0.6909
+Epoch 036/65 | loss=0.6696 | recon=0.0164 | ap=0.0783 | peaks=1.9047 | unmatch=0.1523 | bw_ex=0.0008 | LR=5.05e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9852  data=0.1% of wall-time
+Epoch 037/65 | loss=0.6603 | recon=0.0166 | ap=0.0829 | peaks=1.8638 | unmatch=0.1529 | bw_ex=0.0009 | LR=4.79e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9882  data=0.1% of wall-time
+Epoch 038/65 | loss=0.6769 | recon=0.0163 | ap=0.0781 | peaks=1.9288 | unmatch=0.1525 | bw_ex=0.0011 | LR=4.53e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9770  data=0.1% of wall-time
+Epoch 039/65 | loss=0.6555 | recon=0.0163 | ap=0.0834 | peaks=1.8477 | unmatch=0.1535 | bw_ex=0.0009 | LR=4.28e-04 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9813  data=0.1% of wall-time
+Epoch 040/65 | loss=0.6442 | recon=0.0152 | ap=0.0793 | peaks=1.8214 | unmatch=0.1523 | bw_ex=0.0010 | LR=4.02e-04 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9788  data=0.1% of wall-time
+  [VAL] clean=0.5450  noisy=1.1137  overlap=1.7433  lfp=0.7136
+Epoch 041/65 | loss=0.6437 | recon=0.0163 | ap=0.0843 | peaks=1.8073 | unmatch=0.1520 | bw_ex=0.0008 | LR=3.77e-04 | 13.6s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9825  data=0.1% of wall-time
+Epoch 042/65 | loss=0.6452 | recon=0.0156 | ap=0.0785 | peaks=1.8251 | unmatch=0.1505 | bw_ex=0.0010 | LR=3.52e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9902  data=0.1% of wall-time
+Epoch 043/65 | loss=0.6416 | recon=0.0154 | ap=0.0768 | peaks=1.8182 | unmatch=0.1482 | bw_ex=0.0007 | LR=3.28e-04 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9807  data=0.1% of wall-time
+Epoch 044/65 | loss=0.6361 | recon=0.0155 | ap=0.0815 | peaks=1.7890 | unmatch=0.1523 | bw_ex=0.0010 | LR=3.04e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9765  data=1.6% of wall-time
+Epoch 045/65 | loss=0.6329 | recon=0.0148 | ap=0.0762 | peaks=1.7899 | unmatch=0.1504 | bw_ex=0.0009 | LR=2.80e-04 | 13.5s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9755  data=0.1% of wall-time
+  [VAL] clean=0.4911  noisy=1.0282  overlap=1.5991  lfp=0.7525
+  → Best checkpoint saved (val=0.9678)
+Epoch 046/65 | loss=0.6465 | recon=0.0157 | ap=0.0834 | peaks=1.8204 | unmatch=0.1507 | bw_ex=0.0010 | LR=2.58e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9897  data=0.1% of wall-time
+Epoch 047/65 | loss=0.6471 | recon=0.0147 | ap=0.0817 | peaks=1.8288 | unmatch=0.1494 | bw_ex=0.0009 | LR=2.35e-04 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9848  data=0.1% of wall-time
+Epoch 048/65 | loss=0.6337 | recon=0.0147 | ap=0.0882 | peaks=1.7756 | unmatch=0.1474 | bw_ex=0.0007 | LR=2.14e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9817  data=0.6% of wall-time
+Epoch 049/65 | loss=0.6149 | recon=0.0142 | ap=0.0839 | peaks=1.7197 | unmatch=0.1500 | bw_ex=0.0009 | LR=1.93e-04 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9736  data=0.7% of wall-time
+Epoch 050/65 | loss=0.6083 | recon=0.0138 | ap=0.0754 | peaks=1.7128 | unmatch=0.1500 | bw_ex=0.0009 | LR=1.74e-04 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9813  data=0.1% of wall-time
+  [VAL] clean=0.4265  noisy=1.0127  overlap=1.5888  lfp=0.7492
+  → Best checkpoint saved (val=0.9443)
+Epoch 051/65 | loss=0.6055 | recon=0.0135 | ap=0.0763 | peaks=1.7047 | unmatch=0.1470 | bw_ex=0.0008 | LR=1.55e-04 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9794  data=0.1% of wall-time
+Epoch 052/65 | loss=0.6193 | recon=0.0131 | ap=0.0810 | peaks=1.7439 | unmatch=0.1481 | bw_ex=0.0010 | LR=1.37e-04 | 14.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9679  data=1.8% of wall-time
+Epoch 053/65 | loss=0.6037 | recon=0.0130 | ap=0.0812 | peaks=1.6918 | unmatch=0.1476 | bw_ex=0.0008 | LR=1.20e-04 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9763  data=0.7% of wall-time
+Epoch 054/65 | loss=0.5963 | recon=0.0131 | ap=0.0723 | peaks=1.6818 | unmatch=0.1471 | bw_ex=0.0009 | LR=1.05e-04 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9727  data=0.1% of wall-time
+Epoch 055/65 | loss=0.5854 | recon=0.0131 | ap=0.0687 | peaks=1.6521 | unmatch=0.1462 | bw_ex=0.0011 | LR=8.99e-05 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9856  data=0.1% of wall-time
+  [VAL] clean=0.3829  noisy=1.0015  overlap=1.6174  lfp=0.7741
+  → Best checkpoint saved (val=0.9440)
+Epoch 056/65 | loss=0.6115 | recon=0.0137 | ap=0.0711 | peaks=1.7315 | unmatch=0.1485 | bw_ex=0.0008 | LR=7.63e-05 | 13.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9796  data=0.1% of wall-time
+Epoch 057/65 | loss=0.5939 | recon=0.0131 | ap=0.0669 | peaks=1.6839 | unmatch=0.1456 | bw_ex=0.0007 | LR=6.40e-05 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9882  data=0.1% of wall-time
+Epoch 058/65 | loss=0.5930 | recon=0.0133 | ap=0.0662 | peaks=1.6821 | unmatch=0.1451 | bw_ex=0.0009 | LR=5.28e-05 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9727  data=0.1% of wall-time
+Epoch 059/65 | loss=0.5792 | recon=0.0129 | ap=0.0623 | peaks=1.6440 | unmatch=0.1445 | bw_ex=0.0010 | LR=4.29e-05 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9823  data=0.1% of wall-time
+Epoch 060/65 | loss=0.5881 | recon=0.0127 | ap=0.0612 | peaks=1.6755 | unmatch=0.1455 | bw_ex=0.0008 | LR=3.42e-05 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9730  data=0.1% of wall-time
+  [VAL] clean=0.3425  noisy=1.0077  overlap=1.5851  lfp=0.7415
+  → Best checkpoint saved (val=0.9192)
+Epoch 061/65 | loss=0.5828 | recon=0.0127 | ap=0.0635 | peaks=1.6538 | unmatch=0.1453 | bw_ex=0.0008 | LR=2.69e-05 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9726  data=0.1% of wall-time
+Epoch 062/65 | loss=0.5907 | recon=0.0134 | ap=0.0646 | peaks=1.6744 | unmatch=0.1472 | bw_ex=0.0011 | LR=2.08e-05 | 13.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9782  data=0.1% of wall-time
+Epoch 063/65 | loss=0.5625 | recon=0.0117 | ap=0.0608 | peaks=1.5950 | unmatch=0.1438 | bw_ex=0.0010 | LR=1.61e-05 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9888  data=0.1% of wall-time
+Epoch 064/65 | loss=0.5704 | recon=0.0117 | ap=0.0581 | peaks=1.6256 | unmatch=0.1440 | bw_ex=0.0009 | LR=1.27e-05 | 13.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9770  data=0.1% of wall-time
+Epoch 065/65 | loss=0.5730 | recon=0.0114 | ap=0.0606 | peaks=1.6305 | unmatch=0.1439 | bw_ex=0.0008 | LR=1.07e-05 | 14.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9759  data=0.1% of wall-time
+  [VAL] clean=0.3220  noisy=1.0011  overlap=1.5194  lfp=0.7038
+  → Best checkpoint saved (val=0.8866)
+
+============================================================
+  PHASE: Phase2_overlap  (50 epochs)
+============================================================
+Epoch 066/115 | loss=0.7577 | recon=0.0198 | ap=0.1080 | peaks=2.1389 | unmatch=0.1389 | bw_ex=0.0009 | LR=4.35e-04 | 15.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8463  data=0.6% of wall-time
+Epoch 067/115 | loss=0.8384 | recon=0.0209 | ap=0.1039 | peaks=2.4129 | unmatch=0.1440 | bw_ex=0.0007 | LR=4.21e-04 | 15.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8882  data=0.1% of wall-time
+Epoch 068/115 | loss=0.8219 | recon=0.0247 | ap=0.1081 | peaks=2.3333 | unmatch=0.1477 | bw_ex=0.0009 | LR=4.07e-04 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8756  data=0.1% of wall-time
+Epoch 069/115 | loss=0.8015 | recon=0.0211 | ap=0.1097 | peaks=2.2758 | unmatch=0.1465 | bw_ex=0.0006 | LR=3.93e-04 | 15.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8916  data=0.1% of wall-time
+Epoch 070/115 | loss=0.7631 | recon=0.0190 | ap=0.0871 | peaks=2.1937 | unmatch=0.1436 | bw_ex=0.0005 | LR=3.79e-04 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8832  data=0.1% of wall-time
+  [VAL] clean=0.9948  noisy=1.9243  overlap=0.9110  lfp=1.7694
+Epoch 071/115 | loss=0.8057 | recon=0.0202 | ap=0.1006 | peaks=2.3109 | unmatch=0.1420 | bw_ex=0.0007 | LR=3.66e-04 | 16.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8770  data=0.1% of wall-time
+Epoch 072/115 | loss=0.7505 | recon=0.0199 | ap=0.1027 | peaks=2.1223 | unmatch=0.1451 | bw_ex=0.0006 | LR=3.52e-04 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8608  data=0.1% of wall-time
+Epoch 073/115 | loss=0.7072 | recon=0.0181 | ap=0.0860 | peaks=2.0122 | unmatch=0.1432 | bw_ex=0.0006 | LR=3.39e-04 | 16.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8874  data=0.1% of wall-time
+Epoch 074/115 | loss=0.7313 | recon=0.0184 | ap=0.0886 | peaks=2.0861 | unmatch=0.1460 | bw_ex=0.0008 | LR=3.25e-04 | 15.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8896  data=0.1% of wall-time
+Epoch 075/115 | loss=0.7839 | recon=0.0213 | ap=0.1023 | peaks=2.2308 | unmatch=0.1439 | bw_ex=0.0008 | LR=3.12e-04 | 16.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8831  data=0.1% of wall-time
+  [VAL] clean=0.7589  noisy=1.4707  overlap=0.6336  lfp=1.1066
+Epoch 076/115 | loss=0.7092 | recon=0.0175 | ap=0.0889 | peaks=2.0125 | unmatch=0.1475 | bw_ex=0.0008 | LR=2.99e-04 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8830  data=0.1% of wall-time
+Epoch 077/115 | loss=0.7144 | recon=0.0182 | ap=0.0899 | peaks=2.0319 | unmatch=0.1409 | bw_ex=0.0008 | LR=2.87e-04 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8822  data=0.1% of wall-time
+Epoch 078/115 | loss=0.6591 | recon=0.0165 | ap=0.0818 | peaks=1.8613 | unmatch=0.1471 | bw_ex=0.0010 | LR=2.74e-04 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8842  data=0.1% of wall-time
+Epoch 079/115 | loss=0.6877 | recon=0.0166 | ap=0.0733 | peaks=1.9709 | unmatch=0.1463 | bw_ex=0.0009 | LR=2.62e-04 | 15.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8793  data=0.1% of wall-time
+Epoch 080/115 | loss=0.7989 | recon=0.0201 | ap=0.0978 | peaks=2.2935 | unmatch=0.1467 | bw_ex=0.0006 | LR=2.49e-04 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8732  data=0.1% of wall-time
+  [VAL] clean=0.9602  noisy=1.8122  overlap=0.7833  lfp=1.5296
+Epoch 081/115 | loss=0.7674 | recon=0.0206 | ap=0.0889 | peaks=2.1997 | unmatch=0.1491 | bw_ex=0.0011 | LR=2.37e-04 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8842  data=0.1% of wall-time
+Epoch 082/115 | loss=0.7210 | recon=0.0209 | ap=0.0794 | peaks=2.0530 | unmatch=0.1574 | bw_ex=0.0007 | LR=2.26e-04 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8841  data=0.1% of wall-time
+Epoch 083/115 | loss=0.6785 | recon=0.0181 | ap=0.0700 | peaks=1.9392 | unmatch=0.1545 | bw_ex=0.0009 | LR=2.14e-04 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8873  data=0.1% of wall-time
+Epoch 084/115 | loss=0.6531 | recon=0.0175 | ap=0.0668 | peaks=1.8612 | unmatch=0.1551 | bw_ex=0.0007 | LR=2.03e-04 | 16.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8817  data=0.1% of wall-time
+Epoch 085/115 | loss=0.6589 | recon=0.0181 | ap=0.0635 | peaks=1.8853 | unmatch=0.1488 | bw_ex=0.0009 | LR=1.92e-04 | 16.4s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8640  data=0.1% of wall-time
+  [VAL] clean=0.5059  noisy=1.1801  overlap=0.5807  lfp=0.8835
+  → Best checkpoint saved (val=0.7875)
+Epoch 086/115 | loss=0.6313 | recon=0.0172 | ap=0.0625 | peaks=1.7960 | unmatch=0.1561 | bw_ex=0.0006 | LR=1.81e-04 | 16.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8932  data=0.1% of wall-time
+Epoch 087/115 | loss=0.6303 | recon=0.0169 | ap=0.0650 | peaks=1.7933 | unmatch=0.1483 | bw_ex=0.0010 | LR=1.70e-04 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8838  data=0.1% of wall-time
+Epoch 088/115 | loss=0.6312 | recon=0.0202 | ap=0.0679 | peaks=1.7758 | unmatch=0.1580 | bw_ex=0.0008 | LR=1.60e-04 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8778  data=0.1% of wall-time
+Epoch 089/115 | loss=0.6106 | recon=0.0171 | ap=0.0619 | peaks=1.7302 | unmatch=0.1518 | bw_ex=0.0008 | LR=1.50e-04 | 15.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8876  data=0.1% of wall-time
+Epoch 090/115 | loss=0.5999 | recon=0.0177 | ap=0.0604 | peaks=1.6931 | unmatch=0.1565 | bw_ex=0.0008 | LR=1.40e-04 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8890  data=0.1% of wall-time
+  [VAL] clean=0.4728  noisy=1.1772  overlap=0.4375  lfp=0.8906
+  → Best checkpoint saved (val=0.7445)
+Epoch 091/115 | loss=0.5876 | recon=0.0161 | ap=0.0560 | peaks=1.6686 | unmatch=0.1478 | bw_ex=0.0011 | LR=1.31e-04 | 15.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8977  data=0.7% of wall-time
+^[[A
+Epoch 092/115 | loss=0.5999 | recon=0.0172 | ap=0.0606 | peaks=1.6949 | unmatch=0.1540 | bw_ex=0.0008 | LR=1.22e-04 | 15.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8879  data=0.1% of wall-time
+ Epoch 093/115 | loss=0.5754 | recon=0.0155 | ap=0.0576 | peaks=1.6255 | unmatch=0.1515 | bw_ex=0.0008 | LR=1.13e-04 | 15.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9026  data=0.1% of wall-time
+Epoch 094/115 | loss=0.5757 | recon=0.0154 | ap=0.0589 | peaks=1.6219 | unmatch=0.1554 | bw_ex=0.0009 | LR=1.05e-04 | 16.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8769  data=0.1% of wall-time
+Epoch 095/115 | loss=0.5640 | recon=0.0166 | ap=0.0592 | peaks=1.5799 | unmatch=0.1522 | bw_ex=0.0009 | LR=9.64e-05 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8944  data=0.1% of wall-time
+  [VAL] clean=0.4047  noisy=1.1205  overlap=0.4224  lfp=0.7835
+  → Best checkpoint saved (val=0.6828)
+Epoch 096/115 | loss=0.5528 | recon=0.0144 | ap=0.0528 | peaks=1.5603 | unmatch=0.1542 | bw_ex=0.0010 | LR=8.86e-05 | 15.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8876  data=0.1% of wall-time
+Epoch 097/115 | loss=0.5504 | recon=0.0150 | ap=0.0548 | peaks=1.5481 | unmatch=0.1509 | bw_ex=0.0008 | LR=8.11e-05 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8866  data=0.1% of wall-time
+Epoch 098/115 | loss=0.5546 | recon=0.0150 | ap=0.0535 | peaks=1.5630 | unmatch=0.1539 | bw_ex=0.0008 | LR=7.40e-05 | 16.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8872  data=0.1% of wall-time
+Epoch 099/115 | loss=0.5593 | recon=0.0151 | ap=0.0536 | peaks=1.5794 | unmatch=0.1514 | bw_ex=0.0008 | LR=6.72e-05 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8953  data=0.1% of wall-time
+Epoch 100/115 | loss=0.5512 | recon=0.0131 | ap=0.0509 | peaks=1.5643 | unmatch=0.1508 | bw_ex=0.0009 | LR=6.08e-05 | 15.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8872  data=0.1% of wall-time
+  [VAL] clean=0.4010  noisy=1.1185  overlap=0.4066  lfp=0.8147
+Epoch 101/115 | loss=0.5387 | recon=0.0130 | ap=0.0505 | peaks=1.5220 | unmatch=0.1543 | bw_ex=0.0009 | LR=5.47e-05 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8936  data=0.1% of wall-time
+Epoch 102/115 | loss=0.5459 | recon=0.0134 | ap=0.0516 | peaks=1.5441 | unmatch=0.1508 | bw_ex=0.0008 | LR=4.90e-05 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8880  data=0.1% of wall-time
+Epoch 103/115 | loss=0.5286 | recon=0.0121 | ap=0.0504 | peaks=1.4923 | unmatch=0.1527 | bw_ex=0.0009 | LR=4.37e-05 | 16.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8923  data=0.1% of wall-time
+Epoch 104/115 | loss=0.5475 | recon=0.0120 | ap=0.0491 | peaks=1.5594 | unmatch=0.1503 | bw_ex=0.0008 | LR=3.88e-05 | 16.3s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8774  data=0.1% of wall-time
+Epoch 105/115 | loss=0.5206 | recon=0.0121 | ap=0.0492 | peaks=1.4689 | unmatch=0.1499 | bw_ex=0.0010 | LR=3.42e-05 | 15.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8828  data=0.1% of wall-time
+  [VAL] clean=0.3862  noisy=1.0730  overlap=0.3626  lfp=0.8230
+  → Best checkpoint saved (val=0.6612)
+Epoch 106/115 | loss=0.5273 | recon=0.0116 | ap=0.0482 | peaks=1.4938 | unmatch=0.1526 | bw_ex=0.0008 | LR=3.01e-05 | 16.4s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8659  data=0.7% of wall-time
+Epoch 107/115 | loss=0.5371 | recon=0.0119 | ap=0.0490 | peaks=1.5240 | unmatch=0.1514 | bw_ex=0.0011 | LR=2.63e-05 | 16.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8949  data=0.1% of wall-time
+Epoch 108/115 | loss=0.5203 | recon=0.0114 | ap=0.0471 | peaks=1.4744 | unmatch=0.1500 | bw_ex=0.0008 | LR=2.29e-05 | 16.6s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8808  data=0.1% of wall-time
+Epoch 109/115 | loss=0.5601 | recon=0.0116 | ap=0.0477 | peaks=1.6051 | unmatch=0.1499 | bw_ex=0.0011 | LR=1.99e-05 | 16.4s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8734  data=0.1% of wall-time
+Epoch 110/115 | loss=0.5436 | recon=0.0117 | ap=0.0465 | peaks=1.5508 | unmatch=0.1505 | bw_ex=0.0010 | LR=1.72e-05 | 16.6s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8786  data=0.1% of wall-time
+  [VAL] clean=0.3644  noisy=1.0647  overlap=0.3415  lfp=0.7971
+  → Best checkpoint saved (val=0.6419)
+Epoch 111/115 | loss=0.5216 | recon=0.0118 | ap=0.0470 | peaks=1.4773 | unmatch=0.1501 | bw_ex=0.0009 | LR=1.50e-05 | 15.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8877  data=0.1% of wall-time
+Epoch 112/115 | loss=0.5129 | recon=0.0114 | ap=0.0470 | peaks=1.4489 | unmatch=0.1505 | bw_ex=0.0009 | LR=1.32e-05 | 16.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8672  data=0.1% of wall-time
+Epoch 113/115 | loss=0.5191 | recon=0.0113 | ap=0.0459 | peaks=1.4706 | unmatch=0.1524 | bw_ex=0.0009 | LR=1.18e-05 | 16.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8652  data=0.1% of wall-time
+Epoch 114/115 | loss=0.5212 | recon=0.0114 | ap=0.0452 | peaks=1.4786 | unmatch=0.1520 | bw_ex=0.0010 | LR=1.08e-05 | 16.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8570  data=0.1% of wall-time
+Epoch 115/115 | loss=0.5240 | recon=0.0109 | ap=0.0479 | peaks=1.4878 | unmatch=0.1485 | bw_ex=0.0010 | LR=1.02e-05 | 16.5s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8767  data=0.1% of wall-time
+  [VAL] clean=0.3510  noisy=1.0422  overlap=0.3394  lfp=0.7820
+  → Best checkpoint saved (val=0.6287)
+
+============================================================
+  PHASE: Phase3_LFP_domain  (20 epochs)
+============================================================
+Epoch 116/135 | loss=0.4338 | recon=0.0237 | ap=0.1446 | peaks=1.0249 | unmatch=0.1143 | bw_ex=0.0009 | LR=6.67e-05 | 10.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11642  data=3.9% of wall-time
+Epoch 117/135 | loss=0.2856 | recon=0.0133 | ap=0.0390 | peaks=0.7430 | unmatch=0.1100 | bw_ex=0.0000 | LR=6.13e-05 | 11.6s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11718  data=0.9% of wall-time
+Epoch 118/135 | loss=0.2686 | recon=0.0115 | ap=0.0333 | peaks=0.7055 | unmatch=0.1040 | bw_ex=0.0000 | LR=5.61e-05 | 11.6s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11760  data=5.0% of wall-time
+Epoch 119/135 | loss=0.2571 | recon=0.0113 | ap=0.0294 | peaks=0.6738 | unmatch=0.1031 | bw_ex=0.0000 | LR=5.12e-05 | 11.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11720  data=5.7% of wall-time
+Epoch 120/135 | loss=0.2575 | recon=0.0116 | ap=0.0325 | peaks=0.6700 | unmatch=0.1020 | bw_ex=0.0000 | LR=4.65e-05 | 11.5s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=12055  data=0.8% of wall-time
+  [VAL] clean=0.3339  noisy=1.0580  overlap=0.4565  lfp=0.2403
+  → Best checkpoint saved (val=0.5222)
+Epoch 121/135 | loss=0.2482 | recon=0.0107 | ap=0.0292 | peaks=0.6486 | unmatch=0.0999 | bw_ex=0.0000 | LR=4.22e-05 | 11.5s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11899  data=1.9% of wall-time
+Epoch 122/135 | loss=0.2407 | recon=0.0108 | ap=0.0272 | peaks=0.6258 | unmatch=0.1008 | bw_ex=0.0000 | LR=3.81e-05 | 11.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=12158  data=0.1% of wall-time
+Epoch 123/135 | loss=0.2465 | recon=0.0107 | ap=0.0287 | peaks=0.6433 | unmatch=0.1000 | bw_ex=0.0000 | LR=3.42e-05 | 11.5s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11896  data=1.1% of wall-time
+Epoch 124/135 | loss=0.2478 | recon=0.0102 | ap=0.0276 | peaks=0.6535 | unmatch=0.0969 | bw_ex=0.0000 | LR=3.07e-05 | 11.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11713  data=4.0% of wall-time
+Epoch 125/135 | loss=0.2406 | recon=0.0103 | ap=0.0261 | peaks=0.6313 | unmatch=0.0973 | bw_ex=0.0000 | LR=2.74e-05 | 11.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11788  data=3.7% of wall-time
+  [VAL] clean=0.3211  noisy=1.0744  overlap=0.4874  lfp=0.2213
+Epoch 126/135 | loss=0.2416 | recon=0.0103 | ap=0.0258 | peaks=0.6358 | unmatch=0.0964 | bw_ex=0.0000 | LR=2.44e-05 | 11.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11850  data=4.3% of wall-time
+Epoch 127/135 | loss=0.2392 | recon=0.0104 | ap=0.0254 | peaks=0.6285 | unmatch=0.0957 | bw_ex=0.0000 | LR=2.17e-05 | 11.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11864  data=4.7% of wall-time
+Epoch 128/135 | loss=0.2369 | recon=0.0105 | ap=0.0265 | peaks=0.6188 | unmatch=0.0955 | bw_ex=0.0000 | LR=1.92e-05 | 11.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11817  data=4.8% of wall-time
+Epoch 129/135 | loss=0.2321 | recon=0.0102 | ap=0.0255 | peaks=0.6049 | unmatch=0.0957 | bw_ex=0.0000 | LR=1.71e-05 | 11.4s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=12004  data=0.8% of wall-time
+Epoch 130/135 | loss=0.2347 | recon=0.0100 | ap=0.0262 | peaks=0.6137 | unmatch=0.0953 | bw_ex=0.0000 | LR=1.52e-05 | 11.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11747  data=5.0% of wall-time
+  [VAL] clean=0.3232  noisy=1.0675  overlap=0.5146  lfp=0.2110
+Epoch 131/135 | loss=0.2306 | recon=0.0100 | ap=0.0250 | peaks=0.6016 | unmatch=0.0954 | bw_ex=0.0000 | LR=1.36e-05 | 11.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11756  data=4.2% of wall-time
+Epoch 132/135 | loss=0.2275 | recon=0.0100 | ap=0.0244 | peaks=0.5918 | unmatch=0.0956 | bw_ex=0.0000 | LR=1.23e-05 | 11.8s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11684  data=4.8% of wall-time
+Epoch 133/135 | loss=0.2305 | recon=0.0099 | ap=0.0250 | peaks=0.6022 | unmatch=0.0941 | bw_ex=0.0000 | LR=1.13e-05 | 11.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11668  data=4.6% of wall-time
+Epoch 134/135 | loss=0.2271 | recon=0.0098 | ap=0.0250 | peaks=0.5920 | unmatch=0.0931 | bw_ex=0.0000 | LR=1.06e-05 | 11.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11852  data=4.9% of wall-time
+Epoch 135/135 | loss=0.2249 | recon=0.0100 | ap=0.0246 | peaks=0.5838 | unmatch=0.0939 | bw_ex=0.0000 | LR=1.01e-05 | 11.5s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=11840  data=4.0% of wall-time
+  [VAL] clean=0.3183  noisy=1.0677  overlap=0.5098  lfp=0.2042
+
+============================================================
+  PHASE: Phase4_noisy_boost  (15 epochs)
+============================================================
+Epoch 136/150 | loss=0.7194 | recon=0.0198 | ap=0.0886 | peaks=2.0544 | unmatch=0.1333 | bw_ex=0.0016 | LR=3.59e-05 | 14.5s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=8815  data=3.7% of wall-time
+Epoch 137/150 | loss=0.6997 | recon=0.0183 | ap=0.0809 | peaks=2.0095 | unmatch=0.1285 | bw_ex=0.0017 | LR=3.26e-05 | 15.9s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9194  data=0.1% of wall-time
+Epoch 138/150 | loss=0.7000 | recon=0.0183 | ap=0.0754 | peaks=2.0178 | unmatch=0.1313 | bw_ex=0.0015 | LR=2.95e-05 | 15.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9187  data=0.1% of wall-time
+Epoch 139/150 | loss=0.6568 | recon=0.0177 | ap=0.0758 | peaks=1.8754 | unmatch=0.1306 | bw_ex=0.0017 | LR=2.66e-05 | 15.6s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9272  data=0.1% of wall-time
+Epoch 140/150 | loss=0.7099 | recon=0.0180 | ap=0.0793 | peaks=2.0444 | unmatch=0.1314 | bw_ex=0.0017 | LR=2.40e-05 | 15.7s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9281  data=0.6% of wall-time
+  [VAL] clean=0.3379  noisy=0.9859  overlap=0.5452  lfp=0.2501
+Epoch 141/150 | loss=0.6660 | recon=0.0175 | ap=0.0739 | peaks=1.9105 | unmatch=0.1296 | bw_ex=0.0021 | LR=2.16e-05 | 15.3s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9543  data=0.1% of wall-time
+Epoch 142/150 | loss=0.6800 | recon=0.0176 | ap=0.0726 | peaks=1.9572 | unmatch=0.1314 | bw_ex=0.0020 | LR=1.94e-05 | 15.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9595  data=0.1% of wall-time
+Epoch 143/150 | loss=0.6678 | recon=0.0173 | ap=0.0729 | peaks=1.9149 | unmatch=0.1342 | bw_ex=0.0019 | LR=1.74e-05 | 15.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9504  data=0.1% of wall-time
+Epoch 144/150 | loss=0.6728 | recon=0.0167 | ap=0.0725 | peaks=1.9358 | unmatch=0.1321 | bw_ex=0.0019 | LR=1.57e-05 | 15.3s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9334  data=0.1% of wall-time
+Epoch 145/150 | loss=0.6735 | recon=0.0165 | ap=0.0713 | peaks=1.9411 | unmatch=0.1323 | bw_ex=0.0019 | LR=1.42e-05 | 15.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9375  data=0.1% of wall-time
+  [VAL] clean=0.3361  noisy=0.9584  overlap=0.5565  lfp=0.2337
+  → Best checkpoint saved (val=0.5211)
+Epoch 146/150 | loss=0.6627 | recon=0.0166 | ap=0.0730 | peaks=1.9009 | unmatch=0.1327 | bw_ex=0.0018 | LR=1.29e-05 | 15.3s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9370  data=0.1% of wall-time
+Epoch 147/150 | loss=0.6873 | recon=0.0174 | ap=0.0713 | peaks=1.9844 | unmatch=0.1310 | bw_ex=0.0021 | LR=1.19e-05 | 15.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9437  data=0.1% of wall-time
+Epoch 148/150 | loss=0.6795 | recon=0.0166 | ap=0.0705 | peaks=1.9620 | unmatch=0.1313 | bw_ex=0.0023 | LR=1.10e-05 | 15.1s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9398  data=0.1% of wall-time
+Epoch 149/150 | loss=0.6579 | recon=0.0168 | ap=0.0724 | peaks=1.8849 | unmatch=0.1344 | bw_ex=0.0022 | LR=1.05e-05 | 15.2s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9360  data=0.1% of wall-time
+Epoch 150/150 | loss=0.6698 | recon=0.0165 | ap=0.0699 | peaks=1.9295 | unmatch=0.1336 | bw_ex=0.0023 | LR=1.01e-05 | 15.0s
+  [GPU] mem_alloc=0.1GB  mem_res=0.1GB  samples/s=9461  data=0.1% of wall-time
+  [VAL] clean=0.3353  noisy=0.9294  overlap=0.5850  lfp=0.2323
+  → Best checkpoint saved (val=0.5205)
+
+Préentraînement terminé.
+  Best val loss : 0.5205 (epoch 150)
+  Checkpoints   : checkpoints/pretrain_best.pt  (EMA, use this for finetune)
+                  checkpoints/pretrain_final.pt (last weights)
